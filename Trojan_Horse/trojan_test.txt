@@ -1,0 +1,17 @@
+Explanation and Comments:
+
+The script is written in HashiCorp Configuration Language (HCL), a syntax used by Terraform.
+
+The provider block specifies the cloud provider (AWS in this case) and the desired region.
+
+The resource block defines an AWS EC2 instance. It specifies the Amazon Machine Image (AMI) to use and the instance type.
+
+The output block defines what information should be displayed after the infrastructure is created. In this case, it outputs the public IP address of the created EC2 instance.
+
+Time and Space Complexities:
+
+Time Complexity: The time complexity of IaC scripts depends on the actions being performed. In the example, creating an EC2 instance involves interactions with the AWS API, and the time complexity is influenced by the underlying operations performed by the cloud provider.
+
+Space Complexity: The space complexity is generally minimal for IaC scripts as they are lightweight text files. However, during execution, temporary storage may be required for state files and other resources, depending on the IaC tool used.
+
+It's important to note that the time and space complexities of IaC scripts can vary based on the specific tasks and the cloud provider's APIs being utilized.
